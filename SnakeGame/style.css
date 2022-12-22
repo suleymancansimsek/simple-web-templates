@@ -1,0 +1,68 @@
+/* CSS styles for the game */
+#container {
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    position: relative;
+    background-color: white;
+  }
+  
+  #start-screen,
+  #game-over {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  #start-screen h1,
+  #game-over h1 {
+    color: white;
+    font-size: 40px;
+  }
+  
+  #start-button,
+  #restart-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  #game {
+    display: none;
+  }
+  
+  #snake {
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  #food {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+  }
+
+  #score {
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  

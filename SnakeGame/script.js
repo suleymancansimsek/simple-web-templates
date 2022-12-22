@@ -92,23 +92,6 @@ function startGame() {
 
   // Handle keyboard input to change the direction of the snake
   document.addEventListener('keydown', function(event) {
-   
-// Define the start game function
-function startGame() {
-  // Hide the start screen
-  document.getElementById('start-screen').style.display = 'none';
-
-  // Show the game screen
-  document.getElementById('game').style.display = 'block';
-
-  // Set the initial direction of the snake
-  direction = 'right';
-
-  // Set the interval for the snake movement
-  interval = setInterval(moveSnake, 100);
-
-  // Handle keyboard input to change the direction of the snake
-  document.addEventListener('keydown', function(event) {
     switch (event.key) {
       case 'ArrowRight':
       case 'd':
@@ -133,16 +116,6 @@ function startGame() {
 // Handle click on the start button
 document.getElementById('start-button').addEventListener('click', startGame);
 
-// Handle click on the restart button
-document.getElementById('restart-button').addEventListener('click', function() {
-  // Reset the score
-  score.innerHTML = '0';
-
-  // Hide the game over screen
-  document.getElementById('game-over').style.display = 'none';
-
-  // Show the game screen
-  document.getElementById('game').style.display = 'block
 // Handle click on the restart button
 document.getElementById('restart-button').addEventListener('click', function() {
   // Reset the score

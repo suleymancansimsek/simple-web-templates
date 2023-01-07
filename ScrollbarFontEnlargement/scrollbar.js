@@ -32,3 +32,24 @@ document.addEventListener("mouseup", () => {
   isDragging = false;
   scrollbar.style.transition = ""; // Remove the transition effect
 });
+
+scrollbar.addEventListener('mousedown', function(event) {
+  event.preventDefault();
+  let initialX = event.clientX - scrollbar.offsetLeft;
+  let currentX;
+  let initialScrollLeft = scrollbar.scrollLeft;
+  
+  document.addEventListener('mousemove', moveScrollbar);
+  document.addEventListener('mouseup', stopScrollbar);
+  
+  function moveScrollbar(event) {
+    event.preventDefault();
+    currentX = event.clientX - initialX;
+    scrollbar.scrollLeft = initialScrollLeft - currentX;
+  }
+  
+  function stopScrollbar() {
+    document.removeEventListener('mousemove', moveScrollbar);
+    document.removeEventListener('mouseup', stopScrollbar);
+  }
+});

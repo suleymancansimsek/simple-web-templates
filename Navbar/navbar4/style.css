@@ -30,7 +30,9 @@ header{
     padding: 28px 12%;
     transition: all 0.50s ease;
 }
-
+a{
+    text-decoration: none
+}
 .logo{
     display: flex;
     align-items: center;
@@ -102,4 +104,24 @@ header{
 }
 ul{
     list-style-type: none;
+}
+
+#menu-icon{
+    font-size: 35px;
+    color: var(--text-color);
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+@media (max-width: 1280px){
+    header{
+        padding: 14px 2%;
+        transition: .2s;
+    }
+
+    .navbar a{
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
 }

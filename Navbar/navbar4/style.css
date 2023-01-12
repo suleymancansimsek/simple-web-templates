@@ -3,3 +3,27 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+:root{
+    --bg-color: #222327;
+    --text-color: #fff;
+    --main-color: #eeff00;
+
+}
+
+body{
+    min-height: 100vh;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+
+}

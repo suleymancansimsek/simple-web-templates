@@ -1,11 +1,23 @@
 #theme-button {
-    background-color: blue;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-  }
-  
+  background-color: blue;
+  color: white;
+  margin: auto;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
   .theme-1 {
     background-color: blue;
   }

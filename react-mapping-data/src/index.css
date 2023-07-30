@@ -1,0 +1,22 @@
+
+.card{
+    display: flex;
+    padding: 10px;
+    width: fit-content;
+    align-items: center;
+    color: blueviolet;
+    border: solid;
+    border-width: 2px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.card h3{
+    color: black;
+    font-style: italic;
+    margin: 0;
+}
+.card p{
+    margin: 0;
+}
+

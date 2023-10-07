@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/login-ui-tailwind/dist/output.css" rel="stylesheet">
+  <title>Tailwind Login UI</title>
+</head>
+<body>
+    <section class="bg-gray-50">
+        <div class="mx-auto flex flex-col items-center justify-center px-6 py-8 md:h-screen lg:py-0">
+          <div class="w-full rounded-lg bg-white shadow sm:max-w-md md:mt-0 xl:p-0">
+            <div class="space-y-4 p-6 sm:p-8 md:space-y-6">
+              <h1 class="text-center text-xl font-semibold uppercase leading-6 tracking-wide text-kayra-orange md:text-4xl mb-10">logın</h1>
+              <div class="flex justify-center space-x-2">
+                <button class="rounded-lg border-2 border-kayra-orange px-10 py-2 text-base max-[400px]:text-sm font-semibold leading-6 text-foundation">Sign in</button>
+                <button class="rounded-lg border-2 border-[#F0F0F0] px-10 py-2 text-base max-[400px]:text-sm  font-semibold leading-6 text-foundation">Register</button>
+              </div>
+              <form class="space-y-4 mt-4 md:space-y-6" action="#">
+                <div class="space-y-4 mt-8">
+                  <input type="email" name="email" id="email" class="focus:ring-primary-600 focus:border-primary-600 block w-full rounded-lg border border-gray-300 bg-white p-2.5 text-gray-900 sm:text-sm" placeholder="Email address" required="" />
+                  <div class="relative">
+                    <input type="password" name="password" id="password" placeholder="Password" class="focus:ring-primary-600 focus:border-primary-600 block w-full rounded-lg border border-gray-300 bg-white p-2.5 text-gray-900 sm:text-sm" required="" />
+                    <div class="absolute right-2 top-1/2 -translate-y-1/2 transform">
+                      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.722 6.59543C13.1727 5.43825 12.519 4.4945 11.761 3.76418L10.966 4.55918C11.6143 5.17871 12.179 5.98918 12.6673 6.99856C11.3673 9.68918 9.52197 10.9673 7.00009 10.9673C6.24311 10.9673 5.54587 10.8507 4.90837 10.6176L4.04697 11.479C4.93238 11.8879 5.91676 12.0923 7.00009 12.0923C10.0032 12.0923 12.2438 10.5282 13.722 7.40012C13.7814 7.27432 13.8122 7.13691 13.8122 6.99778C13.8122 6.85864 13.7814 6.72124 13.722 6.59543ZM12.7287 1.58543L12.0626 0.918558C12.051 0.906936 12.0372 0.897716 12.022 0.891425C12.0068 0.885135 11.9906 0.881897 11.9742 0.881897C11.9577 0.881897 11.9415 0.885135 11.9263 0.891425C11.9111 0.897716 11.8973 0.906936 11.8857 0.918558L10.1768 2.62668C9.23462 2.14543 8.17571 1.90481 7.00009 1.90481C3.99697 1.90481 1.75634 3.46887 0.278215 6.597C0.218802 6.7228 0.187988 6.86021 0.187988 6.99934C0.187988 7.13847 0.218802 7.27588 0.278215 7.40168C0.868736 8.64543 1.57967 9.64236 2.41103 10.3925L0.75759 12.0454C0.734166 12.0689 0.721008 12.1007 0.721008 12.1338C0.721008 12.1669 0.734166 12.1987 0.75759 12.2222L1.42462 12.8892C1.44806 12.9126 1.47984 12.9258 1.51298 12.9258C1.54612 12.9258 1.5779 12.9126 1.60134 12.8892L12.7287 1.76231C12.7403 1.7507 12.7495 1.73691 12.7558 1.72174C12.7621 1.70656 12.7653 1.6903 12.7653 1.67387C12.7653 1.65744 12.7621 1.64118 12.7558 1.626C12.7495 1.61083 12.7403 1.59704 12.7287 1.58543ZM1.3329 6.99856C2.63447 4.30793 4.47978 3.02981 7.00009 3.02981C7.85228 3.02981 8.62712 3.17606 9.33009 3.4734L8.23165 4.57184C7.71145 4.29428 7.1158 4.19127 6.5326 4.278C5.94939 4.36474 5.4095 4.63662 4.99258 5.05355C4.57565 5.47047 4.30377 6.01036 4.21704 6.59357C4.1303 7.17677 4.23331 7.77242 4.51087 8.29262L3.20743 9.59606C2.48603 8.95934 1.86415 8.09668 1.3329 6.99856ZM5.18759 6.99856C5.18786 6.72303 5.25313 6.45146 5.37808 6.2059C5.50303 5.96033 5.68414 5.74771 5.9067 5.58529C6.12926 5.42287 6.387 5.31525 6.65898 5.27116C6.93095 5.22706 7.20949 5.24775 7.47197 5.33153L5.27056 7.53293C5.21538 7.36018 5.18739 7.17991 5.18759 6.99856Z" fill="black" fill-opacity="0.45" />
+                        <path d="M6.93785 8.75109C6.88378 8.75109 6.8305 8.74859 6.77769 8.74375L5.95238 9.56906C6.44877 9.75916 6.9896 9.80141 7.50949 9.69069C8.02938 9.57997 8.50606 9.32103 8.88192 8.94517C9.25778 8.56931 9.51673 8.09262 9.62744 7.57273C9.73816 7.05285 9.69592 6.51202 9.50581 6.01562L8.6805 6.84094C8.68535 6.89375 8.68785 6.94703 8.68785 7.00109C8.68797 7.23094 8.64279 7.45856 8.55489 7.67094C8.46698 7.88331 8.33808 8.07628 8.17556 8.23881C8.01303 8.40133 7.82006 8.53023 7.60769 8.61813C7.39531 8.70604 7.16769 8.75122 6.93785 8.75109Z" fill="black" fill-opacity="0.45" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="flex items-center justify-between">
+                  <div class="flex items-start">
+                    <div class="flex h-5 items-center">
+                      <input id="remember" aria-describedby="remember" type="checkbox" class="focus:ring-3 focus:ring-primary-300 h-4 w-4 rounded border border-gray-300 bg-gray-50" required="" />
+                    </div>
+                    <div class="ml-3 text-sm">
+                      <label for="remember" class="text-gray-500">Remember me</label>
+                    </div>
+                  </div>
+                  <a href="#" class="text-sm font-medium text-kayra-orange underline">Forgot your password?</a>
+                </div>
+                <button type="submit" class="focus:ring-primary-300 w-full rounded-lg bg-kayra-orange px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-orange-600 focus:outline-none focus:ring-4">Sign in</button>
+      
+                <div class="inline-flex w-full items-center justify-center">
+                  <hr class="h-px w-full border-0 bg-gray-200" />
+                  <span class="absolute left-1/2 -translate-x-1/2 bg-white px-3 text-sm font-extralight text-slate-300"> Other Options </span>
+                </div>
+      
+                <div class="flex flex-row space-x-2">
+                  <button class="w-full rounded-lg border border-[#D9D9D9] bg-white px-1 py-2 text-base font-normal text-black">
+                    <div class="flex items-center justify-center space-x-2">
+                      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1_1047)">
+                          <path d="M29.3025 15.2806C29.3025 14.0515 29.2028 13.1546 28.9869 12.2245H14.952V17.772H23.1902C23.0242 19.1506 22.1272 21.2268 20.1341 22.6219L20.1061 22.8076L24.5437 26.2454L24.8512 26.2761C27.6747 23.6683 29.3025 19.8315 29.3025 15.2806Z" fill="#4285F4" />
+                          <path d="M14.952 29.8969C18.988 29.8969 22.3763 28.5681 24.8512 26.2761L20.1341 22.6219C18.8718 23.5022 17.1776 24.1167 14.952 24.1167C10.999 24.1167 7.64389 21.5091 6.4479 17.9049L6.27259 17.9198L1.65832 21.4908L1.59798 21.6586C4.05614 26.5417 9.10542 29.8969 14.952 29.8969Z" fill="#34A853" />
+                          <path d="M6.4479 17.905C6.13233 16.9749 5.94969 15.9782 5.94969 14.9485C5.94969 13.9187 6.13233 12.9221 6.4313 11.992L6.42294 11.7939L1.75084 8.16553L1.59798 8.23824C0.584845 10.2646 0.00350952 12.5401 0.00350952 14.9485C0.00350952 17.3569 0.584845 19.6323 1.59798 21.6587L6.4479 17.905Z" fill="#FBBC05" />
+                          <path d="M14.952 5.78004C17.7589 5.78004 19.6524 6.99252 20.732 8.00576L24.9508 3.8866C22.3598 1.47824 18.988 0 14.952 0C9.10542 0 4.05614 3.35508 1.59798 8.23821L6.4313 11.992C7.64389 8.38775 10.999 5.78004 14.952 5.78004Z" fill="#EB4335" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_1_1047">
+                            <rect width="29.32" height="30" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <span class="">Google</span>
+                    </div>
+                  </button>
+                  <button class="w-full rounded-lg border border-[#D9D9D9] bg-white px-1 py-2 text-base font-normal text-black">
+                    <div class="flex items-center justify-center space-x-2">
+                      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1_1054)">
+                          <path d="M30 15C30 6.71578 23.2842 0 15 0C6.71578 0 0 6.71566 0 15C0 22.4869 5.48531 28.6925 12.6562 29.8178V19.3359H8.84766V15H12.6562V11.6953C12.6562 7.93594 14.8957 5.85938 18.3219 5.85938C19.9631 5.85938 21.6797 6.15234 21.6797 6.15234V9.84375H19.7883C17.9248 9.84375 17.3438 11 17.3438 12.1863V15H21.5039L20.8389 19.3359H17.3438V29.8178C24.5147 28.6925 30 22.487 30 15Z" fill="#1877F2" />
+                          <path d="M20.8389 19.3359L21.5039 15H17.3438V12.1863C17.3438 10.9999 17.9249 9.84375 19.7883 9.84375H21.6797V6.15234C21.6797 6.15234 19.9631 5.85938 18.3219 5.85938C14.8957 5.85938 12.6562 7.93594 12.6562 11.6953V15H8.84766V19.3359H12.6562V29.8178C13.4316 29.9393 14.2152 30.0002 15 30C15.7848 30.0002 16.5684 29.9393 17.3438 29.8178V19.3359H20.8389Z" fill="white" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_1_1054">
+                            <rect width="30" height="30" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <span class="capitalize">Facebook</span>
+                    </div>
+                  </button>
+                  <button class="w-full rounded-lg border border-[#D9D9D9] bg-white px-1 py-2 text-base font-normal text-black">
+                    <div class="flex items-center justify-center space-x-2">
+                      <svg width="25" height="30" viewBox="0 0 25 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1_1052)">
+                          <path d="M20.3667 15.9076C20.4088 20.439 24.342 21.947 24.3855 21.9662C24.3521 22.0725 23.757 24.115 22.3134 26.2249C21.0654 28.049 19.7701 29.8663 17.7296 29.9039C15.7248 29.9409 15.0801 28.715 12.7879 28.715C10.4963 28.715 9.78005 29.8663 7.88214 29.9409C5.91262 30.0154 4.41281 27.9685 3.15453 26.151C0.583098 22.4336 -1.38195 15.6463 1.25662 11.0648C2.56738 8.78952 4.90996 7.34886 7.45243 7.3119C9.38643 7.27505 11.212 8.61305 12.3942 8.61305C13.5758 8.61305 15.7941 7.004 18.1262 7.24029C19.1024 7.28095 21.843 7.63457 23.6027 10.2104C23.4608 10.2983 20.3327 12.1193 20.3667 15.9077M16.5988 4.78086C17.6445 3.51514 18.3482 1.75324 18.1562 0C16.649 0.0605714 14.8265 1.00438 13.7454 2.26933C12.7765 3.38962 11.9281 5.18257 12.157 6.90105C13.837 7.03105 15.5531 6.04733 16.5988 4.78086Z" fill="black" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_1_1052">
+                            <rect width="24.39" height="30" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <span class="capitalize">apple</span>
+                    </div>
+                  </button>
+                </div>
+      
+                <div class="flex items-center">
+                  <a href="#" class="text-sm font-semibold leading-6 text-kayra-orange underline">Continue as guest</a>
+                  <svg height="10px" width="10px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 185.343 185.343" xml:space="preserve">
+                    <g>
+                      <g>
+                        <path
+                          style="fill:#DC6601;"
+                          d="M51.707,185.343c-2.741,0-5.493-1.044-7.593-3.149c-4.194-4.194-4.194-10.981,0-15.175
+                                              l74.352-74.347L44.114,18.32c-4.194-4.194-4.194-10.987,0-15.175c4.194-4.194,10.987-4.194,15.18,0l81.934,81.934
+                                              c4.194,4.194,4.194,10.987,0,15.175l-81.934,81.939C57.201,184.293,54.454,185.343,51.707,185.343z"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+</body>
+</html>

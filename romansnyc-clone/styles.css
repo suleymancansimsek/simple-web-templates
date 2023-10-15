@@ -1,0 +1,251 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-repeat: repeat;
+	background-position: top left;
+	background-image: url("https://images.getbento.com/accounts/91d3df48bc8cf24c8a66fc2563f79d13/media/images/85104romans_menupaper_final.png");
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.6875;
+	color: #08080a;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+p {
+	text-align: center;
+}
+
+main > section {
+	margin-top: 3rem;
+}
+section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+}
+
+nav {
+	display: flex;
+	gap: 2rem;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	font-size: 1rem;
+	font-weight: 400;
+	text-transform: none;
+	letter-spacing: 1px;
+	line-height: 1.6875;
+}
+nav ul {
+	display: flex;
+	gap: 2.5rem;
+	justify-content: center;
+	list-style-type: none;
+	color: rgba(8, 8, 10, 0.7);
+	font-size: 18px;
+}
+
+nav ul li a {
+	color: rgba(0, 0, 0, 0.63);
+	text-decoration: none;
+	border-bottom: 1px solid black;
+}
+
+.btn-style {
+	background: transparent;
+	color: rgba(8, 8, 10, 0.7);
+	border: 1px solid black;
+	font-size: 18px;
+	padding: 10px 20px 10px 20px;
+}
+
+.dark {
+	color: black;
+}
+.site-logo {
+	margin-top: 30px;
+	width: 560px;
+	height: 90px;
+}
+
+.site-logo__btn > img {
+	width: 100%;
+	height: 100%;
+}
+
+.lunch__buttons button {
+	background: transparent;
+	font-size: 1.6rem;
+	border: 1px solid black;
+	font-weight: lighter;
+	color: black;
+	padding: 0.5rem 1rem;
+	margin-right: 20px;
+}
+
+.lunch__buttons + p {
+	color: #08080ad3;
+	font-weight: 600;
+	letter-spacing: 0.1rem;
+	margin-top: 2rem;
+}
+
+h2 {
+	color: black;
+	font-size: 2.5rem;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 4rem;
+	color: #08080a;
+	font-weight: 700;
+	text-transform: none;
+	letter-spacing: 2px;
+}
+
+h1 + p {
+	letter-spacing: 1.5px;
+	margin-top: -30px;
+}
+.lunch__buttons + p + h2 + p {
+	color: rgba(0, 0, 0, 0.781);
+	font-size: large;
+}
+
+.menu-prices {
+	font-size: 1.4rem;
+	text-align: center;
+	list-style-type: none;
+	font-weight: 300;
+	color: #08080ab7;
+	width: 500px;
+}
+
+.menu-prices span {
+	display: block;
+	margin-bottom: 1rem;
+	font-size: 1.2rem;
+}
+
+.bottom-description {
+	padding-top: 1rem;
+	padding-right: 1.44444rem;
+	padding-left: 1.44444rem;
+	width: 1140px;
+	max-width: 100%;
+	font-size: x-large;
+	font-weight: 200;
+	color: #08080aab;
+}
+
+.bottom-description p {
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+.management-description {
+	font-family: "Courier New", Courier, monospace;
+	font-size: larger;
+	font-weight: 200;
+}
+
+.information {
+	margin-top: 4rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 7rem;
+	font-family: "Courier New", Courier, monospace;
+	font-size: larger;
+}
+
+.info-container {
+	width: 440px;
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.image-box {
+	margin-top: 8rem;
+}
+.image-box ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+	background-color: #08080a;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.c-image-grid__btn {
+	-webkit-transition: opacity 0.2s ease-in-out 0s;
+	transition: opacity 0.2s ease-in-out 0s;
+	display: block;
+}
+
+.c-image-grid__btn:hover {
+	opacity: 0.85;
+}
+
+li.c-image-grid__item {
+	border-right: 1px solid #fff;
+	margin: 0;
+	margin-bottom: 0.5rem;
+	padding: 0.5rem;
+}
+
+.c-image-grid__img {
+	max-width: 100px;
+	max-height: 36px;
+}
+
+footer > div {
+    padding-right: 30px;
+    padding-left: 30px;
+	display: flex;
+	justify-content: space-between;
+	background-color: #000000ee;
+	color: white;
+}
+
+footer a {
+	text-decoration: none;
+	color: white;
+	font-size: 1.1rem;
+}
+
+footer span{
+    display: flex;
+    background-color: #fff;
+    color: #08080a;
+    justify-content: center;
+}
+footer span a{
+    color: #08080a;
+    display: inline-block;
+}
+
+.blue {
+	color: rgb(44, 130, 201);
+}
+.red {
+	color: rgb(235, 107, 86);
+}

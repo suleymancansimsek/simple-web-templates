@@ -10,11 +10,13 @@
 		<header>
 			<nav>
 				<ul>
-					<li><a href="#">Menus</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Events</a></li>
-					<li><a href="#">Shop</a></li>
-					<li><a href="#">Email Signup</a></li>
+					<li><a href="#menus">Menus</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="https://www.marlowevents.com/">Events</a></li>
+					<li><a href="https://shop.themarlowcollective.com/">Shop</a></li>
+					<li>
+						<a href="#email-signup" onclick="openModal()">Email Signup</a>
+					</li>
 				</ul>
 				<button class="btn-style">Reservations</button>
 			</nav>
@@ -26,9 +28,39 @@
 					/>
 				</a>
 			</div>
+
+			<div class="mobile-menu">
+				<div class="menu">
+					<input type="checkbox" id="check" />
+					<label for="check" class="button">
+						<span></span>
+						<span></span>
+						<span></span>
+					</label>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="#menus">Menus</a></li>
+						<hr />
+						<li><a href="#about">About</a></li>
+						<hr />
+
+						<li><a href="https://www.marlowevents.com/">Events</a></li>
+						<hr />
+
+						<li><a href="https://shop.themarlowcollective.com/">Shop</a></li>
+						<hr />
+
+						<li>
+							<a href="#email-signup" onclick="openModal()">Email Signup</a>
+						</li>
+					</ul>
+					<button class="btn-style">Reservations</button>
+				</nav>
+			</div>
 		</header>
 		<main>
-			<section>
+			<section id="menus">
 				<div class="lunch__buttons">
 					<button>Dinner</button>
 					<button>Lunch</button>
@@ -61,7 +93,7 @@
 					</li>
 				</ul>
 			</section>
-			<section>
+			<section id="about">
 				<div class="bottom-description">
 					<p>
 						Roman’s serves spirited, Italian-influenced food that reflects a
@@ -107,6 +139,21 @@
 				<button class="btn-style dark">Apply Now</button>
 			</section>
 		</main>
+		<aside id="signupModal" class="modal">
+			<span class="close" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+				<h2 class="email">Email Signup</h2>
+				<form>
+					<label for="firstName">First Name <span>- Required</span> </label>
+					<input type="text" id="firstName" placeholder="First Name" required />
+					<label for="lastName">Last Name <span>- Required</span></label>
+					<input type="text" id="lastName" placeholder="Last Name" required />
+					<label for="email">Email <span>- Required</span></label>
+					<input type="email" id="email" placeholder="Email" required />
+					<button class="btn-style" type="submit">Submit</button>
+				</form>
+			</div>
+		</aside>
 		<aside class="image-box">
 			<ul class="c-image-grid__list">
 				<li class="c-image-grid__item">
@@ -371,5 +418,21 @@
 				>
 			</span>
 		</footer>
+		<script src="script.js" type="text/javascript"></script>
+		<script>
+			function openModal() {
+				document.getElementById("signupModal").style.display = "flex";
+			}
+
+			function closeModal() {
+				document.getElementById("signupModal").style.display = "none";
+			}
+
+			window.onclick = function (event) {
+				if (event.target == document.getElementById("signupModal")) {
+					document.getElementById("signupModal").style.display = "none";
+				}
+			};
+		</script>
 	</body>
 </html>
